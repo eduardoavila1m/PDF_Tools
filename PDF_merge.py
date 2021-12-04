@@ -61,8 +61,9 @@ def PDF_merge(list_of_pdf,out_dir):
 def checkDirectories(inputDir,outputDir):
 
     if not path.exists(inputDir):
-        sys.exit(0)
+        
         print('The Path: {} Does not exist. PDF files can cnot be found.'.format(inputDir))
+        sys.exit(0)
 
     if not path.exists(outputDir):
         try:
